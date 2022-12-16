@@ -1,0 +1,128 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-panel{
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-panel a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;   
+}
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img{
+    width: 150px;
+    margin-left: 25px;
+}
+
+.navbar .nav-item{
+    display: inline;
+    padding: 15px 30px;
+    margin: 0px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-item:hover{
+    background-color: #E50914;
+    color: white;
+}
+
+.hero-section{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-section img{
+    width: 40%;
+}
+
+.hero-section .hero-text{
+    padding: 40px;
+}
+
+.hero-section .hero-text h2{
+    font-size: 40px;
+}
+
+.hero-section .hero-text p{
+    font-size: 25px;
+    text-align: justify;
+}
+
+/* Responsivnost: Telefon */
+
+@media screen and (min-width: 300px) and (max-width: 420px){
+    .navbar{
+        height: 150px;
+        display: block;
+        padding-top: 20px;
+    }
+    
+    .navbar img{
+        display: block;
+        margin: 20px auto;
+    }
+
+    .navbar ul{
+        padding: 0px;
+        margin: auto;
+    }
+
+    .navbar .nav-item{
+        padding: 5px 10px;
+        margin: 5px;
+    }
+
+    .hero-section{
+        display: block;
+        height: 1800px;
+    }
+
+    .hero-section img{
+        width: 80%;
+        display: block;
+        margin: 25px auto;
+    }
+
+    .hero-section .hero-text{
+        padding: 0px 40px;
+    }
+
+    .hero-section .hero-text h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero-section .hero-text p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+}
